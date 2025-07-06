@@ -11,7 +11,7 @@ resource "aws_instance" "app" {
               apt-get update -y
               apt-get install -y docker.io
               systemctl start docker
-              docker run -d -p 8082:80 MyDockerimage
+              docker run -d -p 8080:80 mohamedhossam11/insighta-web:latest
               EOF
 
   tags = {
